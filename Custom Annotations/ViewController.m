@@ -109,6 +109,7 @@
     
     [self.navigationController pushViewController:personView animated:YES];
     
+    CFRelease(address);
     CFRelease(person);
 }
 
