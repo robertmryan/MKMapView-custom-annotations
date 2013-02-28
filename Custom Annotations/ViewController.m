@@ -15,7 +15,6 @@
 
 @interface ViewController () <MKMapViewDelegate, ABUnknownPersonViewControllerDelegate>
 
-@property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) NSOperationQueue *searchQueue;
 
 @end
@@ -30,8 +29,6 @@
     self.searchQueue.maxConcurrentOperationCount = 1;
     
     [self.mapView setUserTrackingMode:MKUserTrackingModeFollow];
-    
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 #pragma mark - MKMapViewDelegate
